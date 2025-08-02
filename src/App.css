@@ -1,0 +1,85 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f5f5f5;
+  padding: 2rem;
+  margin: 0;
+}
+
+.todo-container {
+  width: 400px;
+  margin: auto;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  background: #e0e0e0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.error {
+  color: red;
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task input[type="checkbox"] {
+  width: 19px;
+  height: 19px;
+  accent-color: #EAEBED; 
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.task input[type="checkbox"]:checked {
+  accent-color: #434851;
+}
+
+
+.task span {
+  flex: 1;
+  font-size: 16px;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  color: #555;
+}
+
+.delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.delete:hover .trash-icon {
+  filter: brightness(0.8);
+}
+
+
+.trash-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
